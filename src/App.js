@@ -1,16 +1,25 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Title from "./components/title";
-import FavPokemonList from "./components/favPokemonList";
-import CatGallery from "./components/catGallery";
-import FavVillagers from "./components/favVillagers";
 import SanrioCharacters from "./components/sanrioCharacters";
 import CharacterCard from "./components/characterCard";
+import CharacterPage from "./components/characterPage";
+
+import { CharacterProvider } from "./components/characterProvider"; // Update this path according to your file structure
+
 function App() {
     return(
-        <div>
-            <SanrioCharacters />
-        </div>
-        );
+        <CharacterProvider>
+            <Router>
+                <div>
+                    <Routes>
+                        <Route path="/" element={<SanrioCharacters />} />
+                        <Route path = "/:pageName" element={<CharacterPage />} />
+                    </Routes>
+                </div>
+            </Router>
+        </CharacterProvider>
+    );
 };
 
 export default App;

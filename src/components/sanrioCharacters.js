@@ -1,28 +1,9 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
+import React, {useContext} from "react";
 import CharacterCard from "./characterCard";
+import {CharacterContext} from "./characterContext";
 
 const SanrioCharacters = () => {
-    const [characters, setCharacters] = useState({});
-
-    const getSanrioCharacters = async () => {
-        try {
-            axios.get("https://sanrioapi.onrender.com/App/Characters")
-                .then(response => {
-                    const { data } = response
-                    Object.values(data).map((character) => {
-                        character.img = character?.img.split("/revision")[0]
-                    })
-                    setCharacters(data);
-                });
-        } catch (error) {
-            console.log(`Error receiving Sanrio character data: ${error}`)
-        }
-    }
-    useEffect(() => {
-        getSanrioCharacters();
-    }, []);
-
+    const { characterData: characters } = useContext(CharacterContext);
 
     return (
         <div>
@@ -32,17 +13,12 @@ const SanrioCharacters = () => {
                 flexWrap: "wrap",
                 justifyContent: "space-around"
             }}>
-                {Object.values(characters).map((character) => (
-                        <CharacterCard
-                            character={character}
-                        />
-                    )
-                )}
+                {Object.values(characters).map((character, index) => (
+                    <CharacterCard key={index} character={character} />
+                ))}
             </div>
-
         </div>
     )
 }
-
 
 export default SanrioCharacters;
