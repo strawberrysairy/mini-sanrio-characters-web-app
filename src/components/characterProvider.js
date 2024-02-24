@@ -10,13 +10,15 @@ export function CharacterProvider({ children }) {
         const mergedSanrioList = [];
 
         ogSanrioApiList.forEach(ogSanrioApiObj => {
+            if (ogSanrioApiObj.name == "Aggresive Retsuko") {
+                ogSanrioApiObj = {...ogSanrioApiObj, name: "Aggretsuko"};
+            }
             addedSanrioList.forEach(addedSanrioListObj => {
                 if (ogSanrioApiObj.name === addedSanrioListObj.realName) {
                     mergedSanrioList.push({ ...ogSanrioApiObj, ...addedSanrioListObj });
                 }
             });
         });
-
         return mergedSanrioList;
     };
 
