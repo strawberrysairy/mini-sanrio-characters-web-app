@@ -3,9 +3,9 @@ export const addedSanrioProps = [
         key: "pompompurin",
         shortDesc: "Cute yellow floof",
         longDesc:
-            `A sweet, golden retriever dog constantly donning his signature brown beret. His home is a basket within` +
+            `A sweet, golden retriever dog constantly donning his signature brown beret. His home is a basket within ` +
             `the entrance walkway of a home owned by his sister-owner. Purin loves to take his parents shoes and ` +
-            `stash them away and the best food, in his eyes, is his mother's pudding. The rest of his time he uses for` +
+            `stash them away and the best food, in his eyes, is his mother's pudding. The rest of his time he uses for ` +
             `resting, going out with his friends, and "purin acrobatics".`,
         realName: "Pompompurin",
         pageName: "pompompurin",
@@ -16,7 +16,7 @@ export const addedSanrioProps = [
         longDesc:
             "An adventurous spirit with a lively personality, " +
             "Keroppi is a green frog who spends his time at Donut Pond. " +
-            "Due to his vibrant personality, Keroppi is quite popular at the pond" +
+            "Due to his vibrant personality, Keroppi is quite popular at the pond " +
             "and is usually accompanied by his snail companion, Den Den, " +
             "who follows him close behind.",
         realName: "Keroppi",
@@ -26,7 +26,7 @@ export const addedSanrioProps = [
         key: "dearDaniel",
         shortDesc: "Hello Kitty's boyfriend",
         longDesc:
-            "A nature photographer and world traveler, Dear Daniel was introduced as being the boyfriend" +
+            "A nature photographer and world traveler, Dear Daniel was introduced as being the boyfriend " +
             "to Hello Kitty. He is also an anthropromorphized cat just like Kitty",
         realName: "Dear Daniel",
         pageName: "dear-daniel",
@@ -38,7 +38,7 @@ export const addedSanrioProps = [
             "After falling from the heavens, Cinnamoroll is found by a maid from cafe " +
             "and is invited to live with her and her companions. " +
             "A friendly and caring flying dog, Cinnamoroll has big heart and " +
-            "was given his name due to his tail's shape looking like a cinnamon roll",
+            "was given his name due to his tail's shape looking like a cinnamon roll.",
         realName: "Cinnamoroll",
         pageName: "cinnamoroll",
     },
@@ -105,7 +105,7 @@ export const addedSanrioProps = [
             "A very active and sporty, little dog who " +
             "loves basketball, soccer, and skateboarding. Despite his on-the-go lifestyle, " +
             "Pochacco is depicted as being quite accident-prone, as he trips often, " +
-            "ending up with head injuries. He is sometimes seen wearing a large amount of bandages." +
+            "ending up with head injuries. He is sometimes seen wearing a large amount of bandages. " +
             "Pochacco is also depicted as walking upright on two feet, which contributes to him hurting himself.",
         realName: "Pochacco",
         pageName: "pochacco",
@@ -120,9 +120,7 @@ export const addedSanrioProps = [
             "These songs often talk about the stresses from her " +
             "job including how her boss constantly expects something " +
             "from her, even while she's on vacation.",
-        realName: "Aggresive Retsuko",
-        fixedRealName: "Aggressive Retsuko",
-        nickName: "Aggretsuko",
+        realName: "Aggretsuko",
         pageName: "aggretsuko",
     },
     {
@@ -176,9 +174,9 @@ export const addedSanrioProps = [
         key: "ganta",
         shortDesc: "So very ang",
         longDesc:
-            "Although he is Donut Pond's toughest resident, the same location where Kerropi resides," +
-            "Ganta fears darkness and tall distances above ground. He has a unique power that allows" +
-            "him to shift into a rock. Ganta a mix between a frog and cat, has a green body with jean overalls," +
+            "Although he is Donut Pond's toughest resident, the same location where Kerropi resides, " +
+            "Ganta fears darkness and tall distances above ground. He has a unique power that allows " +
+            "him to shift into a rock. Ganta a mix between a frog and cat, has a green body with jean overalls, " +
             "a red shirt, furrowed black eyebrows, and big eyes.",
         realName: "Ganta",
         pageName: "ganta",
@@ -196,7 +194,7 @@ export const addedSanrioProps = [
         key: "cookie",
         shortDesc: "Biscuit's twin brother, a bit of a brat who pesters others by following them",
         longDesc:
-            "Overly indulged and pampered, Cookie pesters others by trailing them around." +
+            "Overly indulged and pampered, Cookie pesters others by trailing them around. " +
             "He loves rice crackers, round candy, and other circular desserts and is the twin brother of Biscuit. " +
             "Cookie is a hamster with a mostly white body with tan/orange hands and upper part of his face.",
         realName: "Cookie",

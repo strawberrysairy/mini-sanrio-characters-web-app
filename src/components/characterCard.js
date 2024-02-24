@@ -18,7 +18,7 @@ const CharacterCard = ({ character }) => {
                     width: "300px",
                     borderRadius: "20px" // gives the card curved/circular edges
                 }}>
-                <h3 style={{color: '#fa86c4'}}>{character.name == "Aggresive Retsuko" ? character.nickName : character.name}</h3>
+                <h3 style={{color: '#fa86c4'}}>{character.name}</h3>
                 <img
                     src={character.img}
                     style={{width: "200px", height: "200px", borderRadius: "10px"}}

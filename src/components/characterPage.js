@@ -8,6 +8,7 @@ const CharacterPage = () => {
     const { characterData } = useContext(CharacterContext);
 
     // Locate the character whose page we're on
+
     const character = characterData.find(character => convertToCamelCase(character.name) == convertToCamelCase(pageName));
 
     if (!character) {
